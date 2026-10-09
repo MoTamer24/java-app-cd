@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: java-app-config
-  namespace: mohamed_tamer
+  namespace: mohamed-tamer
 data:
   # property-like keys; each key maps to a simple value
   name: "mohamed tamer abdo farh"

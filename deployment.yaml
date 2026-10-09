@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: java-app
-    namespace: mohamed_tamer
+    namespace: mohamed-tamer
     labels:
         app: java-app
         tier: backend
