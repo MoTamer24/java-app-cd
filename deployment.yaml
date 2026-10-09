@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: java-app
-    namespace: java-ns
+    namespace: mohamed_tamer
     labels:
         app: java-app
         tier: backend
@@ -21,3 +21,16 @@ spec:
         image: hassaneid/depi-java:v12
         ports:
         - containerPort: 8090
+        env:
+          - name: my_name
+            valueFrom:
+              configMapKeyRef:
+                name: java-app-config
+                key: name
+          - name: my_track
+            valueFrom:
+              configMapKeyRef:
+                name: java-app-config
+                key: track
+        
+
